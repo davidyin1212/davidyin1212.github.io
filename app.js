@@ -1,4 +1,4 @@
-var portfolioApp = angular.module('portfolioApp', []);
+var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
 
 // configure  routes
 portfolioApp.config(function($routeProvider) {
