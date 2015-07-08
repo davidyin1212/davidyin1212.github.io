@@ -7,24 +7,24 @@ portfolioApp.config(function($routeProvider) {
         // route for the home page
         .when('/', {
             templateUrl : 'views/home.html',
-            controller  : 'controllers/main_controller'
+            controller  : 'MainController'
         })
 
         // route for the skills page
         .when('/skills', {
-            templateUrl : 'views/contact.html',
-            controller  : 'controllers/skills_controller'
+            templateUrl : 'views/skills.html',
+            controller  : 'SkillsController'
         })
 
         // route for the expirence page
         .when('/expirence', {
-            templateUrl : 'views/contact.html',
-            controller  : 'controllers/expirence_controller'
+            templateUrl : 'views/expirence.html',
+            controller  : 'ExpirenceController'
         })
 
         // route for the about page
         .when('/about', {
             templateUrl : 'views/about.html',
-            controller  : 'controllers/about_controller'
+            controller  : 'AboutController'
         });
 });
