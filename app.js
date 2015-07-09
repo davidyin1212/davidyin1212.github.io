@@ -3,7 +3,6 @@ angular.module('portfolioApp', ['ngRoute']);
 // configure  routes
 angular.module('portfolioApp').config(function($routeProvider) {
     $routeProvider
-
         // route for the home page
         .when('/', {
             templateUrl : 'views/home.html',
@@ -26,5 +25,9 @@ angular.module('portfolioApp').config(function($routeProvider) {
         .when('/about', {
             templateUrl : 'views/about.html',
             controller  : 'AboutController'
+        })
+
+        .otherwise({ 
+          redirectTo: '/' 
         });
 });
