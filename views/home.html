@@ -1,6 +1,7 @@
 <!-- home.html -->
     <style>
     .container{
+      position: fixed;
       background: url(https://upload.wikimedia.org/wikipedia/en/f/fd/Dundas_Square_Toronto_at_night.jpg);
       background-size: cover;
       width: 100%;
@@ -20,11 +21,26 @@
       z-index: 9999;
       margin-left: 20px;
       margin-right: 20px;
+      color: #F0F8FF;
+      font-size: large;
+    }
+    .context h2{
+    }
+    .context p{
+
+    }
+    .context a{
+
+    }
+    .highlight {
+      background-color: #eaeff4;
+      color: #000;
+      padding: 0 10px 0;
     }
     </style>
     <div class="container"></div>
     <div class="context col-md-4">
-      <h2>Hello</h2>
-      <p>My name is David Yin I am a full-time Fullstack Developer, part-time Hacker, and occasionally I'll do other things as well</p>
+      <h2>Hello.</h2>
+      <p>My name is <span class="highlight">David Yin</span> I am a full-time Fullstack Developer, part-time Hacker, and occasionally I'll do other things as well</p>
       <a href="#expirence">View My Work</a>
     </div>
