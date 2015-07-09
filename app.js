@@ -1,7 +1,7 @@
-var portfolioApp = angular.module('portfolioApp', ['ngRoute']);
+angular.module('portfolioApp', ['ngRoute']);
 
 // configure  routes
-portfolioApp.config(function($routeProvider) {
+angular.module('portfolioApp').config(function($routeProvider) {
     $routeProvider
 
         // route for the home page
