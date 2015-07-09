@@ -28,6 +28,6 @@ angular.module('portfolioApp').config(function($routeProvider) {
         })
 
         .otherwise({ 
-          redirectTo: '/' 
+          redirectTo: '/index' 
         });
 });
