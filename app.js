@@ -4,7 +4,7 @@ angular.module('portfolioApp', ['ngRoute']);
 angular.module('portfolioApp').config(function($routeProvider) {
     $routeProvider
         // route for the home page
-        .when('/', {
+        .when('/index', {
             templateUrl : 'views/home.html',
             controller  : 'MainController'
         })
