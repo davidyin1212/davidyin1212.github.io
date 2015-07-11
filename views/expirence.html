@@ -1,16 +1,22 @@
 <!-- expirence.html -->
+<style>
+.project-carousel{
+  min-height: 100vh;
+}
+
+.project-carousel img{
+  min-height: 100vh;
+}
+</style>
 <div class="jumbotron text-center">
-  <div ng-controller="ExpirenceController" class="col-md-8 col-md-offset-2">
+  <div ng-controller="ExpirenceController" class="project-carousel col-md-8 col-md-offset-2">
     <ul rn-carousel rn-carousel-index rn-carousel-controls rn-carousel-transition class="projects">
-      <li><img src="http://store.storeimages.cdn-apple.com/4662/as-images.apple.com/is/image/AppleInc/aos/published/images/m/ac/mac/launchpad/mac-launchpad-bb-201501?wid=814&hei=448&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1426290356125"></li>
-    </ul>
-    <ul rn-carousel>
       <li ng-repeat="project in projects">
         <div>
           <h1>{{ project.name }}</h1>
           <img ng-src="{{ project.imgs[0] }}">
         </div>
       </li>
-    </ul>  
+    </ul>
   </div>
 </div>
