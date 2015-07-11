@@ -26,7 +26,7 @@ ul[rn-carousel] {
     margin: 0;
     list-style-type: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: inline-block; }
 
 /* prevent flickering when moving buffer */
