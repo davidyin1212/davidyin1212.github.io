@@ -1,9 +1,10 @@
 <!-- expirence.html -->
 <div class="jumbotron text-center">
-  <div ng-controller="ExpirenceController">
+  <div ng-controller="ExpirenceController" class="col-md-12">
     <ul rn-carousel rn-carousel-controls rn-carousel-transition class="projects">
       <li ng-repeat="project in projects">
         <div>
+          <h1>{{ project.name }}</h1>
           <img ng-src="{{ project.img[0] }}">
         </div>
       </li>
