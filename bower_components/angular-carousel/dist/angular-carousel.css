@@ -4,6 +4,7 @@ input[type=range] {
 ul[rn-carousel] {
   overflow: hidden;
   padding: 0;
+  height: 100vh;
   white-space: nowrap;
   position: relative;
   -webkit-perspective: 1000px;
