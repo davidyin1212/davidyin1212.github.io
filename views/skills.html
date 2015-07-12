@@ -40,7 +40,7 @@
                                'other': ' {{skill3.years}} years'}"></progressbar></i>
                 </accordion-heading>
               </accordion-group>
-              <div class = "panel-title" ng-if="skill3.skills.length == 0" ng-repeat="skill3 in skill2.skills">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill3.years > 0"> <progressbar  value="getProgressLength(skill3.years)"><ng-pluralize count="skill3.years"
+              <div class = "panel-title non-clickable-panel" ng-if="skill3.skills.length == 0" ng-repeat="skill3 in skill2.skills">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill3.years > 0"> <progressbar  value="getProgressLength(skill3.years)"><ng-pluralize count="skill3.years"
                 when="{'0.5': '{{skill3.years}} year',
                        '1': '{{skill3.years}} year',
                        'other': ' {{skill3.years}} years'}"></progressbar></i></div>
