@@ -7,7 +7,32 @@
 <div class="jumbotron text-center subview col-md-10 col-md-offset-1">
   <div ng-controller="SkillsController">
     <accordion close-others="false">
+      <!-- first layer -->
+      <accordion-group ng-repeat="skill in skills">
+        <accordion-heading>
+          {{skill.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="{{skill.years}}/{{totalDevLength}}*100"></progressbar></i>
+        </accordion-heading>
 
+        <!-- second layer -->
+        <accordion close-others="true">
+          <accordion-group ng-if="skill.skills.length > 0" ng-repeat="skill2 in skill.skills">
+            <accordion-heading>
+              {{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="{{skill2.years}}/{{totalDevLength}}*100"></progressbar></i>
+            </accordion-heading>
+
+            <!-- third layer -->
+            <accordion close-others="true">
+              <accordion-group ng-if="skill2.skills.length > 0" ng-repeat="skill3 in skill2.skills">
+                <accordion-heading>
+                  {{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="{{skill3.years}}/{{totalDevLength}}*100"></progressbar></i>
+                </accordion-heading>
+              </accordion-group>
+              <div class = "panel-title" ng-if="!(skill2.skills.length > 0)">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="{{skill3.years}}/{{totalDevLength}}*100"></progressbar></i></div>
+            </accordion>
+          </accordion-group>
+          <div class = "panel-title" ng-if="!(skill.skills.length > 0)">{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="{{skill2.years}}/{{totalDevLength}}*100"></progressbar></i></div>
+        </accordion>
+      </accordion-group>
       <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
         <accordion close-others="true">
           <accordion-group heading="{{group.content}}"></accordion-group>
