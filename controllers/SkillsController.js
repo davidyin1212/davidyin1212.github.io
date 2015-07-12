@@ -74,7 +74,7 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
               skills: []
             },
             {
-              title: 'Ruby'
+              title: 'Ruby',
               years: 2,
               skills: []
             },
@@ -101,7 +101,7 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
           skills: []
         },
         {
-          title: 'Database Optimization'
+          title: 'Database Optimization',
           years: 2,
           skills: []
         },
@@ -143,27 +143,27 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
       years: 0,
       skills; [
         {
-          title: 'Regular Expression'
+          title: 'Regular Expression',
           years: 3,
           skills: []
         },
         {
-          title: 'Machine Learning'
+          title: 'Machine Learning',
           years: 0.5,
           skills: []
         },
         {
-          title: 'Operating Systems'
+          title: 'Operating Systems',
           years: 1,
           skills: []
         },
         {
-          title: 'Distributed Systems'
+          title: 'Distributed Systems',
           years: 1,
           skills: []
         },
         {
-          title: 'Computer Networks'
+          title: 'Computer Networks',
           years: 1,
           skills: []
         }
