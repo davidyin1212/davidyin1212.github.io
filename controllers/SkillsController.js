@@ -114,6 +114,11 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
           title: 'Heroku',
           years: 2,
           skills: []
+        },
+        {
+          title: 'AWS',
+          years: 1,
+          skills: []
         }
       ]
     },
