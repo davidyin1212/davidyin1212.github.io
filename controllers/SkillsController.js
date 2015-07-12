@@ -122,17 +122,17 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
       years: 2,
       skills: [
         {
-          title: 'Android'
+          title: 'Android',
           years: 1,
           skills: []
         },
         {
-          title: 'iOS'
+          title: 'iOS',
           years: 1,
           skills: []
         },
         {
-          title: 'Cross-Platform'
+          title: 'Cross-Platform',
           years: 1,
           skills: []
         }
