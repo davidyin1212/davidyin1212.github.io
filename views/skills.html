@@ -17,18 +17,8 @@
         <accordion close-others="true">
           <accordion-group ng-if="skill.skills.length > 0" ng-repeat="skill2 in skill.skills">
             <accordion-heading>
-              {{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i>
+              {{skill2.title}} length: {{skill.skills.length}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i>
             </accordion-heading>
-
-            <!-- third layer -->
-            <accordion close-others="true">
-              <accordion-group ng-if="skill2.skills.length > 0" ng-repeat="skill3 in skill2.skills">
-                <accordion-heading>
-                  {{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i>
-                </accordion-heading>
-              </accordion-group>
-              <div class = "panel-title" ng-if="!(skill2.skills.length > 0)">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i></div>
-            </accordion>
           </accordion-group>
           <div class = "panel-title" ng-if="!(skill.skills.length > 0)">{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i></div>
         </accordion>
