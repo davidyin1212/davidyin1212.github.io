@@ -3,6 +3,10 @@
 .panel-title{
   text-align: left;
 }
+.non-clickable-panel{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 </style>
 <div class="jumbotron text-center subview col-md-10 col-md-offset-1">
   <div ng-controller="SkillsController">
@@ -42,7 +46,7 @@
                        'other': ' {{skill3.years}} years'}"></progressbar></i></div>
             </accordion>
           </accordion-group>
-          <div class = "panel-title" ng-if="skill2.skills.length == 0" ng-repeat="skill2 in skill.skills" >{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill2.years > 0"> <progressbar value="getProgressLength(skill2.years)"><ng-pluralize count="skill2.years"
+          <div class = "panel-title non-clickable-panel" ng-if="skill2.skills.length == 0" ng-repeat="skill2 in skill.skills" >{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill2.years > 0"> <progressbar value="getProgressLength(skill2.years)"><ng-pluralize count="skill2.years"
             when="{'0.5': '{{skill2.years}} year',
                    '1': '{{skill2.years}} year',
                    'other': ' {{skill2.years}} years'}"></progressbar></i></div>

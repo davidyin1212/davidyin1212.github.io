@@ -72,7 +72,7 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
               skills: []
             },
             {
-              tittle: 'C/C++',
+              title: 'C/C++',
               years: 2,
               skills: []
             },
