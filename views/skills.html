@@ -1,9 +1,16 @@
 <!-- skills.html -->
+<style>
+.panel-title{
+  text-align: left;
+}
+</style>
 <div class="jumbotron text-center subview col-md-10 col-md-offset-1">
   <div ng-controller="SkillsController">
     <accordion close-others="false">
       <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
-        This content is straight in the template.
+        <accordion-heading>
+          This content is straight in the template. <progressbar class="pull-right" value="55"></progressbar>
+        </accordion-heading>
       </accordion-group>
       <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
         {{group.content}}
@@ -14,7 +21,7 @@
           <div ng-repeat="item in items">{{item}}</div>
       </accordion-group>
       <accordion-group is-open="status.open">
-          <accordion-heading class="pull-left">
+          <accordion-heading>
               I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
           </accordion-heading>
           This is just some content to illustrate fancy headings.
