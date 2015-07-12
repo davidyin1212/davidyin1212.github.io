@@ -19,9 +19,9 @@
             <accordion-heading>
               {{skill2.title}} length: {{skill2.skills.length}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i>
             </accordion-heading>
-            
+
           </accordion-group>
-          <div class = "panel-title" ng-if="!(skill2.skills.length > 0)">{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i></div>
+          <div class = "panel-title" ng-if="skill2.skills.length == 0">{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar value="55"></progressbar></i></div>
         </accordion>
       </accordion-group>
 
