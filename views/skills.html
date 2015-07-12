@@ -10,7 +10,7 @@
       <!-- first layer -->
       <accordion-group ng-repeat="skill in skills">
         <accordion-heading>
-          {{skill.title}} {{getProgressLength( {{ skill.years }} )}}<i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill.years > 0"> <progressbar value=""><ng-pluralize count="skill.years"
+          {{skill.title}} {{getProgressLength(skill.years)}}<i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill.years > 0"> <progressbar value=""><ng-pluralize count="skill.years"
           when="{'0.5': '{{skill.years}} year',
                  '1': '{{skill.years}} year',
                  'other': ' {{skill.years}} years'}"></progressbar></i>
