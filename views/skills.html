@@ -27,7 +27,10 @@
                   {{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar ngif="skill3.years > 0" value="55"></progressbar></i>
                 </accordion-heading>
               </accordion-group>
-              <div class = "panel-title" ng-if="skill3.skills.length == 0" ng-repeat="skill3 in skill2.skills">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar ngif="skill3.years > 0" value="55">{{skill3.years}} years</progressbar></i></div>
+              <div class = "panel-title" ng-if="skill3.skills.length == 0" ng-repeat="skill3 in skill2.skills">{{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar ngif="skill3.years > 0" value="55"><ng-pluralize count="skill3.years"
+                when="{'0.5': '{{skill3.years}} year',
+                       '1': '{{skill3.years}} year',
+                       'other': ' {{skill3.years}} years'}"></progressbar></i></div>
             </accordion>
           </accordion-group>
           <div class = "panel-title" ng-if="skill2.skills.length == 0" ng-repeat="skill2 in skill.skills" >{{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4"> <progressbar ngif="skill2.years > 0" value="55">{{skill2.years}} years</progressbar></i></div>
