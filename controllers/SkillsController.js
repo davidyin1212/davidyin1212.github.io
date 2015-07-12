@@ -141,7 +141,7 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
     {
       title: 'Additional Skills/Interests',
       years: 0,
-      skills; [
+      skills: [
         {
           title: 'Regular Expression',
           years: 3,
