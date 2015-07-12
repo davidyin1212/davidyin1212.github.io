@@ -1,16 +1,7 @@
 <!-- skills.html -->
     <div class="jumbotron text-center">
       <div ng-controller="SkillsController">
-        <p>
-          <button class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button>
-          <button class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button>
-        </p>
-
-        <label class="checkbox">
-          <input type="checkbox" ng-model="oneAtATime">
-          Open only one at a time
-        </label>
-        <accordion close-others="oneAtATime">
+        <accordion>
           <accordion-group heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
             This content is straight in the template.
           </accordion-group>
@@ -24,7 +15,7 @@
           </accordion-group>
           <accordion-group is-open="status.open">
               <accordion-heading>
-                  I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+                  <p class="pull-left">I can have markup, too!</p> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
               </accordion-heading>
               This is just some content to illustrate fancy headings.
           </accordion-group>

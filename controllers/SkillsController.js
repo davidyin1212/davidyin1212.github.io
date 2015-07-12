@@ -1,5 +1,5 @@
 angular.module('portfolioApp').controller('SkillsController', function($scope) {
-  $scope.oneAtATime = true;
+  $scope.oneAtATime = false;
 
   $scope.groups = [
     {
