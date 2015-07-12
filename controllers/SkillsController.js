@@ -84,12 +84,12 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
               skills: []
             },
             {
-              tittle: 'C/C++'
+              tittle: 'C/C++',
               years: 2,
               skills: []
             },
             {
-              title: 'C#'
+              title: 'C#',
               years: 1,
               skills: []
             }
