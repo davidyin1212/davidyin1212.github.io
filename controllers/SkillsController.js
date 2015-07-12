@@ -84,7 +84,7 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
           ]
         },
         {
-          title: 'Databases (MySQL, PostgreSQL, DynamoDB)',
+          title: 'Databases',
           years: 3,
           skills: []
         },
