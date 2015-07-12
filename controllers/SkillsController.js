@@ -172,6 +172,10 @@ angular.module('portfolioApp').controller('SkillsController', function($scope) {
     }
   ]; 
 
+  $scope.getProgressLength = function(years) {
+    return (years/$scope.totalDevLength) * 100;
+  }
+
   $scope.items = ['Item 1', 'Item 2', 'Item 3'];
 
   $scope.addItem = function() {
