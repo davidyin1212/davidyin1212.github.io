@@ -10,12 +10,12 @@
     height: 108px;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(248, 248, 248, 1);
+    color: rgba(119, 119, 119, 1);
     height: 108px;
+    font-size: large;
     background-color: rgba(248, 248, 248, 0.85);
 }
-##bootstrap-menu.navbar-default .navbar-nav>li>a{
-    font-size: large;
+#bootstrap-menu.navbar-default .navbar-nav>li{
     height: 108px;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
@@ -27,7 +27,7 @@
 #bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(85, 85, 85, 1);
-    background-color: rgba(248, 248, 248, 0.85);
+    background-color: rgba(231, 231, 231, 0.85);
 }
 #bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #ddd;
