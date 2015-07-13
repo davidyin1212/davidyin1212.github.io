@@ -15,8 +15,8 @@
     background-color: rgba(248, 248, 248, 0.85);
 }
 #bootstrap-menu.navbar-default .navbar-nav>li{
-    text-align: center;
     height: 108px;
+    vertical-align: middle;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
