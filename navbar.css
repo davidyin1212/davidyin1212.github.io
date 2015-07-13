@@ -36,7 +36,7 @@
 }
 #bootstrap-menu.navbar-default .navbar-toggle:hover,
 #bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: rgba(248, 248, 248, 0.85);
 }
 #bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
     background-color: #888;
