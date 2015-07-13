@@ -11,12 +11,12 @@
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(119, 119, 119, 1);
+    line-height: 100%;
     font-size: large;
     background-color: rgba(248, 248, 248, 0.85);
 }
 #bootstrap-menu.navbar-default .navbar-nav>li{
     height: 108px;
-    vertical-align: middle;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
