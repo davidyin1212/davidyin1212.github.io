@@ -1,6 +1,7 @@
 #bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(60, 60, 60, 1);
     font-size: 25px;
+    height: 108px;
 }
 #bootstrap-menu.navbar-default {
     font-size: 12px;
