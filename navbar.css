@@ -11,12 +11,13 @@
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(119, 119, 119, 1);
-    height: 108px;
-    line-height: 108px;
+    vertical-align: middle;
+    display: table-cell;
     font-size: large;
     background-color: rgba(248, 248, 248, 0.85);
 }
 #bootstrap-menu.navbar-default .navbar-nav>li{
+    display: table;
     height: 108px;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
