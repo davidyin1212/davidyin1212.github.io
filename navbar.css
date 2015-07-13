@@ -1,11 +1,11 @@
 #bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(248, 248, 248, 1);
+    color: white;
     font-size: 25px;
     height: 108px;
 }
 #bootstrap-menu.navbar-default {
     font-size: 12px;
-    background-color: rgba(248, 248, 248, 0.85);
+    background-color: white;
     border-bottom-width: 0px;
     height: 108px;
 }
@@ -14,7 +14,7 @@
     vertical-align: middle;
     display: table-cell;
     font-size: large;
-    background-color: rgba(248, 248, 248, 0.85);
+    background-color: white;
 }
 #bootstrap-menu.navbar-default .navbar-nav>li{
     display: table;
@@ -23,20 +23,20 @@
 #bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
     color: rgba(51, 51, 51, 1);
-    background-color: rgba(248, 248, 248, 0.85);
+    background-color: white;
 }
 #bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(85, 85, 85, 1);
-    background-color: rgba(231, 231, 231, 0.85);
+    background-color: white;
 }
 #bootstrap-menu.navbar-default .navbar-toggle {
     border-color: #ddd;
 }
 #bootstrap-menu.navbar-default .navbar-toggle:hover,
 #bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: rgba(248, 248, 248, 0.85);
+    background-color: white;
 }
 #bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
     background-color: #888;
