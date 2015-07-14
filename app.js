@@ -27,6 +27,26 @@ angular.module('portfolioApp').config(function($routeProvider) {
             controller  : 'AboutController'
         })
 
+        .when('/nexj/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
+
+        .when('/lineup/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
+
+        .when('/amazon/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
+
+        .when('/interaxon/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
+
         .otherwise({ 
           redirectTo: '/index' 
         });
