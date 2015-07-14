@@ -1,0 +1,17 @@
+.slide.ng-enter {
+  transition:0.75s;
+  opacity: 0;
+}
+
+.slide.ng-enter-active {
+  opacity: 1;
+}
+
+.slide.ng-leave {
+  transition:0.75s;
+  opacity: 1;
+}
+
+.slide.ng-leave-active {
+  opacity: 0;
+}
