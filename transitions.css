@@ -23,8 +23,8 @@
 
 @keyframes scaleDownSlide {
   0% {-webkit-transform: scale(1.0);}
-  50% {opacity: 0.8 -webkit-transform: scale(0.8); animation-timing-function: cubic-bezier(.77,0,.175,1);}
-  100% {opacity: 0.0 -webkit-transform: scale(0.8); transform: translateX(-100%); animation-timing-function: ease-out;}
+  50% {opacity: 0.8; -webkit-transform: scale(0.8); animation-timing-function: cubic-bezier(.77,0,.175,1);}
+  100% {opacity: 0.0; -webkit-transform: scale(0.8); transform: translateX(-100%); animation-timing-function: ease-out;}
 }
 
 /* entering animations --------------------------------------- */
