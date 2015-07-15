@@ -1,4 +1,5 @@
 angular.module('portfolioApp').controller('SkillsController', function($scope) {
+  $scope.pageClass = "page-skills";
   $scope.totalDevLength = 5;
 
   $scope.skills = [
