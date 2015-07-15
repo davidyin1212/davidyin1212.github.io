@@ -23,8 +23,8 @@
 
 @keyframes scaleDownSlide {
   0% {-webkit-transform: scale(1.0);}
-  50% {-webkit-transform: scale(0.8); animation-timing-function: ease-out;}
-  100% {transform: translateX(-100%);}
+  50% {-webkit-transform: scale(0.8); animation-timing-function: cubic-bezier(.77,0,.175,1);}
+  100% {-webkit-transform: scale(0.8); transform: translateX(-100%); animation-timing-function: ease-out;}
 }
 
 /* entering animations --------------------------------------- */
@@ -49,7 +49,7 @@
   animation: scaleUp 0.5s both ease-in; z-index: 8888;
 }
 .page-home.ng-leave {
-  animation: scaleDownSlide 1.0s both ease-in; z-index: 9999;
+  animation: scaleDownSlide 1.2s both ease-in; z-index: 9999;
 }
 .page-about.ng-enter {
   animation: scaleUp 0.5s both ease-in; z-index: 8888;
