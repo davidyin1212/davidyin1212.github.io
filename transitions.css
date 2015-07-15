@@ -49,7 +49,7 @@
   animation: scaleUp 0.5s both ease-in; z-index: 8888;
 }
 .page-home.ng-leave {
-  animation: scaleDownSlide 1.2s both ease-in; z-index: 9999;
+  animation: rotateFall 1.0s both ease-in; z-index: 9999;
 }
 .page-about.ng-enter {
   animation: scaleUp 0.5s both ease-in; z-index: 8888;
