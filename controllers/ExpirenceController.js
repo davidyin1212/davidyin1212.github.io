@@ -24,7 +24,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'Interaxon',
     url: '#interaxon/3',
-    imgs: ['http://www.mindtecstore.com/images/stories/virtuemart/product/muse_white.jpg', 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png','http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'],
+    imgs: ['http://www.bodype.com/uploads/4/8/7/4/48745295/2702463_orig.jpg', 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png','http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'],
     description: '4 Lorem ipsum dolor sit amet, legimus admodum quo in, cu sed consul putent fabellas, suscipit patrioque expetendis te usu. His vitae elaboraret te. Ludus adolescens no eum, molestie reprehendunt ius no. Eu doctus similique cum, qui id harum mentitum, eu eam tation apeirian petentium. Mea ex legimus laoreet aliquando, his commodo placerat consectetuer in, id eam facer prodesset. Percipit voluptatibus ad usu.',
     date: '2013-2014'
   }]
