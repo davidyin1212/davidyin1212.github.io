@@ -52,19 +52,19 @@
   animation: scaleDownSlide 1.0s both cubic-bezier(.77,0,.175,1); z-index: 9999;
 }
 .page-about.ng-enter {
-  animation: slideInRight 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
+  animation: scaleUp 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
 }
 .page-about.ng-leave {
   animation: scaleDownSlide 0.8s both cubic-bezier(.77,0,.175,1); z-index: 9999;
 }
 .page-expirence.ng-enter {
-  animation: slideInRight 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
+  animation: scaleUp 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
 }
 .page-expirence.ng-leave {
   animation: scaleDownSlide 0.8s both cubic-bezier(.77,0,.175,1); z-index: 9999;
 }
 .page-skills.ng-enter {
-  animation: slideInRight 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
+  animation: scaleUp 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
 }
 .page-skills.ng-leave {
   animation: scaleDownSlide 0.8s both cubic-bezier(.77,0,.175,1); z-index: 9999;
