@@ -51,7 +51,7 @@
 .page-home.ng-leave {
   animation: scaleDownSlide 1.0s both cubic-bezier(.77,0,.175,1); z-index: 9999;
 }
-.page-about.ng-enter {
+/*.page-about.ng-enter {
   animation: slideInRight 0.8s both cubic-bezier(.77,0,.175,1); z-index: 8888;
 }
 .page-about.ng-leave {
@@ -68,4 +68,4 @@
 }
 .page-skills.ng-leave {
   animation: slideOutLeft 0.8s both cubic-bezier(.77,0,.175,1); z-index: 9999;
-}
+}*/
