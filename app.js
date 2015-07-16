@@ -51,3 +51,10 @@ angular.module('portfolioApp').config(function($routeProvider) {
           redirectTo: '/index' 
         });
 });
+
+angular.module('portfolioApp').run(function($templateCache) {
+    $templateCache.put('views/skills.html');
+    $templateCache.put('views/expirence.html');
+    $templateCache.put('views/about.html');
+    $templateCache.put('views/expirenceDetail.html');
+});
