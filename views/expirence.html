@@ -23,6 +23,13 @@
 
 .project-carousel h1 {
   position: fixed;
+  margin-top: 40vh;
+  color: black;
+}
+.project-carousel h2 {
+  position: fixed;
+  margin-top: 45vh;
+  color: black;
 }
 </style>
 <div class="jumbotron text-center col-md-10 col-md-offset-1">
@@ -32,7 +39,8 @@
       <li ng-repeat="project in projects">
         <a ng-href="{{project.url}}">
           <div>
-            <h1 class="col-md-6 col-md-offset-2">{{ project.name }}</h1>
+            <h1 class="col-md-6">{{ project.name }}</h1>
+            <h2 class="col-md-6">{{ project.date }}</h2>
             <img ng-src="{{ project.imgs[0] }}">
           </div>
         </a>
