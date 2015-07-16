@@ -20,6 +20,10 @@
   margin-top: 80vh;
   z-index: 10;
 }
+
+.project-carousel h1 {
+  position: fixed;
+}
 </style>
 <div class="jumbotron text-center col-md-10 col-md-offset-1">
   <div ng-controller="ExpirenceController" class="project-carousel">
@@ -28,7 +32,7 @@
       <li ng-repeat="project in projects">
         <a ng-href="{{project.url}}">
           <div>
-            <h1>{{ project.name }}</h1>
+            <h1 col-md-6 col-md-offset-2>{{ project.name }}</h1>
             <img ng-src="{{ project.imgs[0] }}">
           </div>
         </a>
