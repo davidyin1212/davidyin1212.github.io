@@ -52,9 +52,9 @@ angular.module('portfolioApp').config(function($routeProvider) {
         });
 });
 
-angular.module('portfolioApp').run(function($templateCache) {
-    $templateCache.put('views/skills.html');
-    $templateCache.put('views/expirence.html');
-    $templateCache.put('views/about.html');
-    $templateCache.put('views/expirenceDetail.html');
-});
+// angular.module('portfolioApp').run(function($templateCache) {
+//     $templateCache.put('views/skills.html');
+//     $templateCache.put('views/expirence.html');
+//     $templateCache.put('views/about.html');
+//     $templateCache.put('views/expirenceDetail.html');
+// });
