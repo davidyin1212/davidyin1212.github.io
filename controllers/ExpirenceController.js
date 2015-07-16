@@ -3,7 +3,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   $scope.projects = [{
     name: 'NexJ',
     url: '#nexj/0',
-    imgs: ['http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg', 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg'],
+    imgs: ['http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg', 'http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
     description: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, JQuery, Javascript, HTML/CSS',
     date: '2015'
   },
@@ -17,7 +17,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'Amazon',
     url: '#amazon/2',
-    imgs: ['http://media.corporate-ir.net/media_files/IROL/97/97664/images/amazon_logo_RGB.jpg'],
+    imgs: ['http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png','http://media.corporate-ir.net/media_files/IROL/97/97664/images/amazon_logo_RGB.jpg'],
     description: '3 Lorem ipsum dolor sit amet, legimus admodum quo in, cu sed consul putent fabellas, suscipit patrioque expetendis te usu. His vitae elaboraret te. Ludus adolescens no eum, molestie reprehendunt ius no. Eu doctus similique cum, qui id harum mentitum, eu eam tation apeirian petentium. Mea ex legimus laoreet aliquando, his commodo placerat consectetuer in, id eam facer prodesset. Percipit voluptatibus ad usu.',
     date: '2014'
   },
