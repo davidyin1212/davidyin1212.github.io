@@ -25,7 +25,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
     name: 'Interaxon',
     url: '#interaxon/3',
     imgs: ['http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png','http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'],
-    description: '4 Lorem ipsum dolor sit amet, legimus admodum quo in, cu sed consul putent fabellas, suscipit patrioque expetendis te usu. His vitae elaboraret te. Ludus adolescens no eum, molestie reprehendunt ius no. Eu doctus similique cum, qui id harum mentitum, eu eam tation apeirian petentium. Mea ex legimus laoreet aliquando, his commodo placerat consectetuer in, id eam facer prodesset. Percipit voluptatibus ad usu.',
+    description: 'Worked with 4 other developers to create the first production ready application for Interaxon\'s brains sensing headband MUSE. Key challenges were tyring to figure out how to convey the concept of the headband which was realtivley complex to users. So a lot of iterations of the applications were made with user testing done every two weeks on the mobile app. Company was very push oriented very high pace losts of work to be done. In terms of technical difficutlies because of the app being developed cross platform instead of native (there was some native development as well though) we had to deal with a lot of issues with memory leaks, proper asset management (so that the app doesn\'t consume to much memory), as well accomdating for different screens. In the end the product was launched successfully. Tech stack primarily consisted of the UNITY game engine (C#) with some native work done in both iOS (objective-c) and Android (JAVA).
     date: '2013-2014'
   }]
   $scope.selected = $routeParams.id;
