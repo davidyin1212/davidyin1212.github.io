@@ -11,6 +11,9 @@
   </div>
 
   <div class="jumbotron col-md-10 col-md-offset-1">
-    <h2>{{projects[selected].description | newlines}}</h2>
+  	<span ng-repeat="line in (projects[selected].description | newlines) track by $index">
+	    <h2> {{line}}</h2>
+	    <br>
+	</span>
   </div>
 </div>

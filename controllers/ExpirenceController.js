@@ -31,16 +31,8 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   $scope.selected = $routeParams.id;
 });
 
-angular.module('portfolioApp').filter('newlines', function () {
-    return function(text) {
-        return text.replace(/\n/g, '<br/>');
-    }
-})
-.filter('noHTML', function () {
-    return function(text) {
-        return text
-                .replace(/&/g, '&amp;')
-                .replace(/>/g, '&gt;')
-                .replace(/</g, '&lt;');
-    }
+angular.module('portfolioApp').filter('newlines', function() {
+  return function(text) {
+    return text.split(/\n/g);
+  };
 });
