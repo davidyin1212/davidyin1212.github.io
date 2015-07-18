@@ -3,7 +3,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   $scope.projects = [{
     name: 'NexJ',
     url: '#nexj/0',
-    imgs: ['http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg', 'http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
+    imgs: ['http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
     description: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, jQuery, Javascript, HTML/CSS',
     date: '2015'
   },
