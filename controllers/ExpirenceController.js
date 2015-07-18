@@ -30,3 +30,9 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   }]
   $scope.selected = $routeParams.id;
 });
+
+angular.module('portfolioApp').filter('newlines', function () {
+    return function(text) {
+        return text.replace(/\n/g, '<br/>');
+    }
+});
