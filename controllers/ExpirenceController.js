@@ -1,48 +1,37 @@
 angular.module('portfolioApp').controller('ExpirenceController', function($scope, $routeParams) {
   $scope.pageClass = "page-expirence";
   $scope.projects = [{
+    name: 'H&H',
+    url: '#hh/0',
+    imgs: ['/assets/H&HDashboard.PNG', '/assets/H&HLanding.PNG', '/assets/H&HSearch.PNG'],
+    description: "Web application create by me for H&H International that allows for their clients to look and order from current inventory of cars and also to track their own inventory. Allows clients to put down a deposit using their credit car directly (I used Stripe) and create a customer profile for later use. App has dynamic and responsive searching. Employees can look at what cars are orded by which clients and update their stauses as well as add new cars to the inventory. App manages permission groups using both permissions as well as user groups and allows access to different areas of the app based upon user permissions. \nStack is Ruby on Rails for the backend server using Stripe for payments, Devise for authentication, and Pundit for permissions and authorization. These create the required JSON endpoints and are consumed by the front-end built using AngularJS. Also used Bootstrap as well as followed Google's material design principles. \nDesign Choices: \nHigh responsiveness required the use of AngularJS and it's assets were integrated into the rails asset pipeline. This increased site responsiveness. \nDecided to use permissons and user groups exposed through the API to drive template rendering that way we can have good permission driven rendering and allow certain capabilities to people with the proper permission. This is also enforced in the back-end as well with the use of Pundit so that unathorized access to specific JSON endpoints (depending on user) would not be allowed. \nResponsive search bar that would update search quries immediatly on text input rather than clicking search. Done by filtering results based upon input on each user input change. \nUsers can only be created by Admin's to the system. This was a contraint that the client wanted since user create is exposed by Rails via there MVC architecture it was pretty easy to do this. \n\nLive Site: Awaiting Deployment",
+    date: '2015'
+  },
     name: 'NexJ',
-    url: '#nexj/0',
-    front_cover: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg',
-    items: [
-      {type: 'img', src: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg'}, 
-      {type: 'img', src: 'http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'}, 
-      {type: 'text', src: {text: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, JQuery, Javascript, HTML/CSS.'}}
-    ],
+    url: '#nexj/1',
+    imgs: ['http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg','http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
+    description: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, jQuery, Javascript, HTML/CSS',
     date: '2015'
   },
   {
     name: 'LineUp',
-    url: '#lineup/1',
-    front_cover: '/assets/Lineup.PNG',
-    items: [
-      {type: 'img', src: '/assets/Lineup.PNG'}, 
-      {type: 'text', src: {text: 'For LineUp my job was to come up with a solution for creating a unified web application that allowed users to browse and schedule courses all in one place. \nMy primary responsibilities were to come up with the models and entity relationships between these models as well as the set up actions on said models. Further I was primarily responsible for creating an authentication service as well as doing most of the frontend work. I also was responsible for generating the calendar from combined model attributes and displaying that in the view. \nThe tech-stack is primarily Ruby on Rails for the backend server (using PostgreSQL for persistance), we used Javascript, jQuery, HTML/CSS along with the Bootstrap framework for the front end. \nThis was deployed using Heroku and I was primarily in charge of deployment as well and making sure we had our app properly provisioned.'}}
-    ],
+    url: '#lineup/2',
+    imgs: ['/assets/Lineup.PNG'],
+    description: 'For LineUp my job was to come up with a solution for creating a unified web application that allowed users to browse and schedule courses all in one place. \nMy primary responsibilities were to come up with the models and entity relationships between these models as well as the set up actions on said models. Further I was primarily responsible for creating an authentication service as well as doing most of the frontend work. I also was responsible for generating the calendar from combined model attributes and displaying that in the view. \nThe tech-stack is primarily Ruby on Rails for the backend server (using PostgreSQL for persistance), we used Javascript, jQuery, HTML/CSS along with the Bootstrap framework for the front end. \nThis was deployed using Heroku and I was primarily in charge of deployment as well and making sure we had our app properly provisioned.',
     date: '2015'
   },
   {
     name: 'Amazon',
-    url: '#amazon/2',
-    front_cover: 'http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png',
-    items: [
-      {type: 'img', src: 'http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png'}, 
-      {type: 'text', src: {text: 'For Amazon I worked on the CS-Tech team which focuses on Customer Service Angent Technologies. Primarily on work on building a tool that would allow new-hires to be in the system before they started working, which was a feature that did not exist before my project. The primary diffculties with this was to limit the amount of change required to the existing db schema and modularize as much as possible.'}},
-      {type: 'img', src: 'http://media.corporate-ir.net/media_files/IROL/97/97664/images/amazon_logo_RGB.jpg'}, 
-      {type: 'text', src: {text: 'To that end the decision was made to use Dynamo db (AWS no sql database) as the primary source of persistance with FK pairs to provide a way to relate the elements in dynamo to user and scheduling information which was held in the MySQL database. The tech stack was Java on the Spring framework acting as a micro-service with API that allowed the application to request specific resouces it needed for the required views. The application was primarily done in pearl as the back end and a combination of Javascript, jQuery, and HTML/CSS in the front-end.'}}
-    ],
+    url: '#amazon/3',
+    imgs: ['http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png','http://media.corporate-ir.net/media_files/IROL/97/97664/images/amazon_logo_RGB.jpg'],
+    description: 'For Amazon I worked on the CS-Tech team which focuses on Customer Service Angent Technologies. \nPrimarily on work on building a tool that would allow new-hires to be in the system before they started working, which was a feature that did not exist before my project. \nThe primary diffculties with this was to limit the amount of change required to the existing db schema and modularize as much as possible. To that end the decision was made to use Dynamo db (AWS no sql database) as the primary source of persistance with FK pairs to provide a way to relate the elements in dynamo to user and scheduling information which was held in the MySQL database. \nThe tech stack was Java on the Spring framework acting as a micro-service with API that allowed the application to request specific resouces it needed for the required views. The application was primarily done in pearl as the back end and a combination of Javascript, jQuery, and HTML/CSS in the front-end.',
     date: '2014'
   },
   {
     name: 'Interaxon',
-    url: '#interaxon/3',
-    front_cover: 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png',
-    items: [
-      {type: 'img', src: 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png'}, 
-      {type: 'text', src: {text: 'Worked with 4 other developers to create the first production ready application for Interaxon\'s brains sensing headband MUSE. \nKey challenges were tyring to figure out how to convey the concept of the headband which was realtivley complex to users. So a lot of iterations of the applications were made with user testing done every two weeks on the mobile app.\nCompany was very push oriented very high pace losts of work to be done. \n'}},
-      {type: 'img', src: 'http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'}, 
-      {type: 'text', src: {text: 'In terms of technical challenges because of the app being developed cross platform instead of native (there was some native development as well though) we had to deal with a lot of issues with memory leaks, proper asset management (so that the app doesn\'t consume to much memory), as well accomdating for different screens. \nIn the end the product was launched successfully. \nTech stack primarily consisted of the UNITY game engine (C#) with some native work done in both iOS (objective-c) and Android (JAVA).'}}
-    ],
+    url: '#interaxon/4',
+    imgs: ['http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png','http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'],
+    description: 'Worked with 4 other developers to create the first production ready application for Interaxon\'s brains sensing headband MUSE. \nKey challenges were tyring to figure out how to convey the concept of the headband which was realtivley complex to users. So a lot of iterations of the applications were made with user testing done every two weeks on the mobile app. \nCompany was very push oriented very high pace losts of work to be done. \nIn terms of technical difficutlies because of the app being developed cross platform instead of native (there was some native development as well though) we had to deal with a lot of issues with memory leaks, proper asset management (so that the app doesn\'t consume to much memory), as well accomdating for different screens. \nIn the end the product was launched successfully. \nTech stack primarily consisted of the UNITY game engine (C#) with some native work done in both iOS (objective-c) and Android (JAVA).',
     date: '2013-2014'
   }]
   $scope.selected = $routeParams.id;
@@ -51,11 +40,5 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
 angular.module('portfolioApp').filter('newlines', function() {
   return function(text) {
     return text.split(/\n/g);
-  };
-});
-
-angular.module('portfolioApp').filter('formatString', function() {
-  return function(text) {
-    return text.strip(text.length-1,1).strip(0,1);
   };
 });
