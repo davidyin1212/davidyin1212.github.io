@@ -13,7 +13,7 @@
 
     <div ng-if="item.type == 'text'" class="jumbotron col-md-10 col-md-offset-1">
     	<span>
-  	    <h2> {{item.src.strip(0,1).strip(item.src.length-1, 1) | newlines}}</h2>
+  	    <h2> {{item.src.substring(0,item.src.length-1).substring(1, item.src.length) | newlines}}</h2>
   	    <br>
   	</span>
     </div>
