@@ -53,3 +53,9 @@ angular.module('portfolioApp').filter('newlines', function() {
     return text.split(/\n/g);
   };
 });
+
+angular.module('portfolioApp').filter('formatString', function() {
+  return function(text) {
+    return text.substring(1,text.length-1);
+  };
+});
