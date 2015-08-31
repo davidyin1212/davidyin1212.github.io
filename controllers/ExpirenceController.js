@@ -1,5 +1,9 @@
 angular.module('portfolioApp').controller('ExpirenceController', function($scope, $routeParams) {
   $scope.pageClass = "page-expirence";
+  $scope.stringBuilder = function(tmpString) {
+    var newString = tmpString.substring(1, tmpString.length-1);
+    return newString
+  };
   $scope.projects = [{
     name: 'NexJ',
     url: '#nexj/0',
