@@ -4,9 +4,10 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
     name: 'H&H',
     url: '#hh/0',
     imgs: ['/assets/H&HDashboard.PNG', '/assets/H&HLanding.PNG', '/assets/H&HSearch.PNG'],
-    description: "",
+    description: "Web application create for H&H International that allows for their clients to look and order from current inventory of cars and also to track their own inventory. Allows clients to put down a deposit using their credit car directly (I used Stripe) and create a customer profile for later use. App has dynamic and responsive searching. Employees can look at what cars are orded by which clients and update their stauses as well as add new cars to the inventory. App manages permission groups using both permissions as well as user groups and allows access to different areas of the app based upon user permissions. \nStack is Ruby on Rails for the backend server using Stripe for payments, Devise for authentication, and Pundit for permissions and authorization. These create the required JSON endpoints and are consumed by the front-end built using AngularJS. Also used Bootstrap as well as followed Google's material design principles. \nDesign Choices: \nHigh responsiveness required the use of AngularJS and it's assets were integrated into the rails asset pipeline. This increased site responsiveness. \nDecided to use permissons and user groups exposed through the API to drive template rendering that way we can have good permission driven rendering and allow certain capabilities to people with the proper permission. This is also enforced in the back-end as well with the use of Pundit so that unathorized access to specific JSON endpoints (depending on user) would not be allowed. \nResponsive search bar that would update search quries immediatly on text input rather than clicking search. Done by filtering results based upon input on each user input change. \nUsers can only be created by Admin's to the system. This was a contraint that the client wanted since user create is exposed by Rails via there MVC architecture it was pretty easy to do this. \n\nLive Site: Awaiting Deployment",
     date: '2015'
   },
+  {
     name: 'NexJ',
     url: '#nexj/1',
     imgs: ['http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg','http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
