@@ -3,6 +3,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   $scope.projects = [{
     name: 'NexJ',
     url: '#nexj/0',
+    front_cover: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg',
     items: [
       {type: 'img', src: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg'}, 
       {type: 'text', src: 'Currently working at NexJ working to develop top of the line CRM software to financial customers.'},
@@ -14,6 +15,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'LineUp',
     url: '#lineup/1',
+    front_cover: '/assets/Lineup.PNG',
     items: [
       {type: 'img', src: '/assets/Lineup.PNG'}, 
       {type: 'text', src: 'For LineUp my job was to come up with a solution for creating a unified web application that allowed users to browse and schedule courses all in one place. \nMy primary responsibilities were to come up with the models and entity relationships between these models as well as the set up actions on said models. Further I was primarily responsible for creating an authentication service as well as doing most of the frontend work. I also was responsible for generating the calendar from combined model attributes and displaying that in the view. \nThe tech-stack is primarily Ruby on Rails for the backend server (using PostgreSQL for persistance), we used Javascript, jQuery, HTML/CSS along with the Bootstrap framework for the front end. \nThis was deployed using Heroku and I was primarily in charge of deployment as well and making sure we had our app properly provisioned.'}
@@ -23,6 +25,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'Amazon',
     url: '#amazon/2',
+    front_cover: 'http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png',
     items: [
       {type: 'img', src: 'http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png'}, 
       {type: 'text', src: 'For Amazon I worked on the CS-Tech team which focuses on Customer Service Angent Technologies. Primarily on work on building a tool that would allow new-hires to be in the system before they started working, which was a feature that did not exist before my project. The primary diffculties with this was to limit the amount of change required to the existing db schema and modularize as much as possible.'},
@@ -34,6 +37,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'Interaxon',
     url: '#interaxon/3',
+    front_cover: 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png',
     items: [
       {type: 'img', src: 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png'}, 
       {type: 'text', src: 'Worked with 4 other developers to create the first production ready application for Interaxon\'s brains sensing headband MUSE. \nKey challenges were tyring to figure out how to convey the concept of the headband which was realtivley complex to users. So a lot of iterations of the applications were made with user testing done every two weeks on the mobile app.\nCompany was very push oriented very high pace losts of work to be done. \n'},
