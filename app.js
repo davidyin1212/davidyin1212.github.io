@@ -26,7 +26,10 @@ angular.module('portfolioApp').config(function($routeProvider) {
             templateUrl : 'views/about.html',
             controller  : 'AboutController'
         })
-
+        .when('/hh/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
         .when('/nexj/:id', {
             templateUrl : 'views/expirenceDetail.html',
             controller  : 'ExpirenceController'

@@ -4,17 +4,16 @@
   width: 100%;
 }
 </style>
-<div class="jumbotron" ng-controller="ExpirenceController">
-  <div ng-repeat="item in projects[selected].items">
-    <div ng-if="item.type == 'img'" class="detail-masthead"  >
-      <img ng-src="{{item.src}}">
-    </div>
 
-    <div ng-if="item.type == 'text'" class="jumbotron col-md-10 col-md-offset-1">
-    	<span>
-  	    <h2 class="description"> {{item.src.text | newlines | formatString}}</h2>
-  	    <br>
-  	</span>
-    </div>
+<div class="jumbotron" ng-controller="ExpirenceController">
+  <div class="detail-masthead"  >
+    <img ng-repeat="img in projects[selected].imgs" ng-src="{{img}}">
+  </div>
+
+  <div class="jumbotron col-md-10 col-md-offset-1">
+  	<span ng-repeat="line in (projects[selected].description | newlines) track by $index">
+	    <h2> {{line}}</h2>
+	    <br>
+	</span>
   </div>
 </div>
