@@ -12,7 +12,7 @@
 
   <div class="jumbotron col-md-10 col-md-offset-1">
     <h2>
-        <a ng-if="projects[selected].link != undefined" ng-href="{{projects[selected].link.url}}">{{projects[selected].link.name}}</a>
+      <a ng-if="projects[selected].link != undefined" ng-href="{{projects[selected].link.url}}">{{projects[selected].link.name}}</a>
     </h2>
   	<span ng-repeat="line in (projects[selected].description | newlines) track by $index">
 	    <h2> {{line}}</h2>
