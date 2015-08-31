@@ -56,6 +56,6 @@ angular.module('portfolioApp').filter('newlines', function() {
 
 angular.module('portfolioApp').filter('formatString', function() {
   return function(text) {
-    return text.substring(1,4);
+    return text.strip(text.length-1,1).strip(0,1);
   };
 });
