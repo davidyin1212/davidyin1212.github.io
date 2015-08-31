@@ -6,9 +6,8 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
     front_cover: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg',
     items: [
       {type: 'img', src: 'http://www.nexj.com/wp-content/uploads/2012/10/scheduling-screenshots.jpg'}, 
-      {type: 'text', src: 'Currently working at NexJ working to develop top of the line CRM software to financial customers.'},
       {type: 'img', src: 'http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'}, 
-      {type: 'text', src: 'Work as a Fullstack Developer using Java, Microsoft SQL Server, JQuery, Javascript, HTML/CSS.'}
+      {type: 'text', src: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, JQuery, Javascript, HTML/CSS.'}
     ],
     date: '2015'
   },
