@@ -14,6 +14,9 @@
     <h2>
       <a ng-if="projects[selected].link != undefined" ng-href="{{projects[selected].link.url}}">{{projects[selected].link.name}}</a>
     </h2>
+    <h2 ng-if="projects[selected].github != undefined">
+      Github: <a ng-href="{{projects[selected].github}}"><img src="/assets/github10.png"></a>
+    </h2>
   	<span ng-repeat="line in (projects[selected].description | newlines) track by $index">
 	    <h2> {{line}}</h2>
 	    <br>
