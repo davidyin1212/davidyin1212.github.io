@@ -45,3 +45,6 @@
 #bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #888;
 }
+#bootstrap-menu.navbar-right {
+    margin-right: 0px;
+}
