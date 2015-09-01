@@ -38,6 +38,12 @@
 .rn-carousel-control {
   font-size: 6rem;
 }
+.highlight {
+  background-color: #eaeff4;
+  font-weight: bold;
+  color: #000;
+  padding: 0 10px 0;
+}
 </style>
 <div class="jumbotron text-center col-md-10 col-md-offset-1">
   <div ng-controller="ExpirenceController" class="project-carousel">
@@ -46,8 +52,8 @@
       <li ng-repeat="project in projects">
         <a ng-href="{{project.url}}">
           <div>
-            <h1 class="col-md-2 col-md-offset-1">{{ project.name }}</h1>
-            <p class="col-md-2 col-md-offset-1">{{ project.date }}</p>
+            <h1 class="col-md-2 col-md-offset-1"><span class="highlight">{{ project.name }}</span></h1>
+            <p class="col-md-2 col-md-offset-1"><span class="highlight">{{ project.date }}</span></p>
             <img ng-src="{{ project.front_cover }}">
           </div>
         </a>
