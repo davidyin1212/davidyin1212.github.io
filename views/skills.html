@@ -28,8 +28,8 @@
     <accordion class="custom-heading" close-others="false">
       <!-- first layer -->
       <accordion-group ng-repeat="skill in skills">
-        <accordion-heading>
-          {{skill.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill.years > 0"> <progressbar class="custom-progress" value="getProgressLength(skill.years)"><ng-pluralize count="skill.years"
+        <accordion-heading class="custom-heading">
+          <div class="custom-heading">{{skill.title}}</div> <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill.years > 0"> <progressbar class="custom-progress" value="getProgressLength(skill.years)"><ng-pluralize count="skill.years"
           when="{'0.5': '{{skill.years}} year',
                  '1': '{{skill.years}} year',
                  'other': ' {{skill.years}} years'}"></progressbar></i>
