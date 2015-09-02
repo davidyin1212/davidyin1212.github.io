@@ -8,7 +8,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.panel-heading.custom-heading {
+.custom-heading {
   padding: 25px, 20px;
   color: white;
   background-color: #009688;
@@ -25,10 +25,10 @@
 </style>
 <div class="jumbotron text-center subview col-md-10 col-md-offset-1">
   <div ng-controller="SkillsController">
-    <accordion close-others="false">
+    <accordion class="custom-heading" close-others="false">
       <!-- first layer -->
       <accordion-group ng-repeat="skill in skills">
-        <accordion-heading class="custom-heading">
+        <accordion-heading>
           {{skill.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill.years > 0"> <progressbar class="custom-progress" value="getProgressLength(skill.years)"><ng-pluralize count="skill.years"
           when="{'0.5': '{{skill.years}} year',
                  '1': '{{skill.years}} year',
@@ -37,8 +37,8 @@
 
         <!-- second layer -->
         <accordion close-others="true">
-          <accordion-group ng-if="skill2.skills.length > 0" ng-repeat="skill2 in skill.skills">
-            <accordion-heading class="custom-heading">
+          <accordion-group class="custom-heading" ng-if="skill2.skills.length > 0" ng-repeat="skill2 in skill.skills">
+            <accordion-heading>
               {{skill2.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill2.years > 0"> <progressbar class="custom-progress" value="getProgressLength(skill2.years)"><ng-pluralize count="skill2.years"
                 when="{'0.5': '{{skill2.years}} year',
                        '1': '{{skill2.years}} year',
@@ -46,9 +46,9 @@
             </accordion-heading>
 
             <!-- third layer -->
-            <accordion close-others="true">
+            <accordion class="custom-heading" close-others="true">
               <accordion-group ng-if="skill3.skills.length > 0" ng-repeat="skill3 in skill2.skills">
-                <accordion-heading class="custom-heading">
+                <accordion-heading>
                   {{skill3.title}} <i class="pull-right col-md-8 col-sm-6 col-xs-4" ng-if="skill3.years > 0"> <progressbar class="custom-progress" value="getProgressLength(skill3.years)"><ng-pluralize count="skill3.years"
                         when="{'0.5': '{{skill3.years}} year',
                                '1': '{{skill3.years}} year',
