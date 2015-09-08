@@ -1,4 +1,4 @@
-angular.module('portfolioApp', ['ngRoute','ngAnimate','ui.bootstrap','angular-carousel']);
+angular.module('portfolioApp', ['ngRoute','ngAnimate','ui.bootstrap','angular-carousel','ngAria','ngMaterial']);
 
 // configure  routes
 angular.module('portfolioApp').config(function($routeProvider) {
