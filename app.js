@@ -1,7 +1,7 @@
 angular.module('portfolioApp', ['ngRoute','ngAnimate','ui.bootstrap','angular-carousel','ngAria','ngMaterial']);
 
 // configure  routes
-angular.module('portfolioApp').config(function($routeProvider, $mdThemingProvider)) {
+angular.module('portfolioApp').config(function($routeProvider, $mdThemingProvider) {
     $routeProvider
         // route for the home page
         .when('/index', {
