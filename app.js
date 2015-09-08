@@ -54,7 +54,7 @@ angular.module('portfolioApp').config(function($routeProvider, $mdThemingProvide
           redirectTo: '/index' 
         });
     $mdThemingProvider.theme('default')
-    .primaryPalette('blue')
+    .primaryPalette('blue');
 });
 
 // angular.module('portfolioApp').run(function($templateCache) {
