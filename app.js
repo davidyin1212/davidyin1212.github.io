@@ -1,7 +1,7 @@
 angular.module('portfolioApp', ['ngRoute','ngAnimate','ui.bootstrap','angular-carousel','ngAria','ngMaterial']);
 
 // configure  routes
-angular.module('portfolioApp').config(function($routeProvider) {
+angular.module('portfolioApp').config(function($routeProvider, $mdThemingProvider)) {
     $routeProvider
         // route for the home page
         .when('/index', {
@@ -53,6 +53,8 @@ angular.module('portfolioApp').config(function($routeProvider) {
         .otherwise({ 
           redirectTo: '/index' 
         });
+    $mdThemingProvider.theme('default')
+    .primaryPalette('blue')
 });
 
 // angular.module('portfolioApp').run(function($templateCache) {
