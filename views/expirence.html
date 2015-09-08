@@ -53,11 +53,11 @@
 .darken img {
   display: block;
 
-  -webkit-transition: all 1.0s linear;
-     -moz-transition: all 1.0s linear;
-      -ms-transition: all 1.0s linear;
-       -o-transition: all 1.0s linear;
-          transition: all 1.0s linear;
+  -webkit-transition: all 0.6s linear;
+     -moz-transition: all 0.6s linear;
+      -ms-transition: all 0.6s linear;
+       -o-transition: all 0.6s linear;
+          transition: all 0.6s linear;
 }
 
 .darken:hover img {
@@ -81,7 +81,7 @@
           <div>
             <h1 class="col-md-2 col-md-offset-1"><span class="highlight">{{ project.name }}</span></h1>
             <p class="col-md-2 col-md-offset-1"><span class="highlight">{{ project.date }}</span></p>
-            <div class="darken">
+            <!-- <div class="darken">
               <img ng-src="{{ project.front_cover }}">
               <div class="details">
                 <h4>Technologies: </h4>
@@ -89,7 +89,7 @@
                   <li ng-repeat="tech in project.technologies">{{tech}}</li>
                 </ul>
               </div>
-            </div>
+            </div> -->
           </div>
         </a>
       </li>
