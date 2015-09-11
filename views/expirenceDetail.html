@@ -127,16 +127,14 @@
   
 }
 </style>
-
-<div class="jumbotron" ng-controller="ExpirenceController">
-  <a class="mouse-scroll" href="#description"> 
-    <span class="mouse">
-      <span class="mouse-movement"> 
-      </span>
+<a class="mouse-scroll" href="#description"> 
+  <span class="mouse">
+    <span class="mouse-movement"> 
     </span>
-    <span class="mouse-message fadeIn">scroll</span> 
-  </a>
-
+  </span>
+  <span class="mouse-message fadeIn">scroll</span> 
+</a>
+<div class="jumbotron" ng-controller="ExpirenceController">
   <div class="detail-masthead">
     <img ng-repeat="img in projects[selected].imgs" ng-src="{{img}}">
   </div>
