@@ -57,3 +57,17 @@ angular.module('portfolioApp').filter('newlines', function() {
     return text.split(/\n/g);
   };
 });
+
+angular.module('portfolioApp').directive('scrollOnClick', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, $elm) {
+      $elm.on('click', function() {
+        $("body").animate({scrollTop: $elm.offset().top}, "slow");
+        $(".mouse-scroll").fadeOut("fast", function() {
+          $(".mouse-scroll").hide();
+        })
+      });
+    }
+  }
+});
