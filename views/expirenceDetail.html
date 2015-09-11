@@ -10,13 +10,13 @@
 </style>
 
 <div class="jumbotron" ng-controller="ExpirenceController">
-  <scroll-on-click class="mouse-scroll"> 
+  <a class="mouse-scroll" href="#description"> 
     <span class="mouse">
       <span class="mouse-movement"> 
       </span>
     </span>
     <span class="mouse-message fadeIn">scroll</span> 
-  </scroll-on-click>
+  </a>
 
   <div class="detail-masthead">
     <img ng-repeat="img in projects[selected].imgs" ng-src="{{img}}">
