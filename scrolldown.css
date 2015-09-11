@@ -1,7 +1,7 @@
 // Mouse & Message Styles
 
 // The Scroll Link
-.mouse-scroll.ng-scope {
+a.mouse-scroll.ng-scope {
   display: inline-block;
   line-height: 18px;
   font-size: 13px;
