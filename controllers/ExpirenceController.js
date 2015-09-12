@@ -68,6 +68,7 @@ angular.module('portfolioApp').directive('scrollOnClick', function() {
           $(".mouse-scroll").hide();
         })
       });
-    }
-  }
+    },
+    templateUrl: 'views/mouse-down.html' 
+  };
 });
