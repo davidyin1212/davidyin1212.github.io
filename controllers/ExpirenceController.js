@@ -1,4 +1,4 @@
-angular.module('portfolioApp').controller('ExpirenceController', function($scope, $routeParams) {
+angular.module('portfolioApp').controller('ExpirenceController', function($scope, $routeParams, $location, $anchorScroll) {
   $scope.pageClass = "page-expirence";
   $scope.projects = [{
     name: 'H&H',
@@ -50,6 +50,10 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
     date: '2013-2014'
   }]
   $scope.selected = $routeParams.id;
+  $scope.goToDescription = function() {
+    $location.hash("description");
+    $anchorScroll();
+  }
 });
 
 angular.module('portfolioApp').filter('newlines', function() {
