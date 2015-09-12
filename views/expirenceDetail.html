@@ -20,7 +20,7 @@
   <div class="detail-masthead">
     <img ng-repeat="img in projects[selected].imgs" ng-src="{{img}}">
   </div>
-  <a class="arrow animated infinite bounce arrow-wrap" href="#" scroll-to="description"></a>
+  <a class="arrow animated infinite bounce" href="#" scroll-to="description"></a>
   <div id="description" class="jumbotron col-md-10 col-md-offset-1">
     <h2>
       <a ng-if="projects[selected].link != undefined" ng-href="{{projects[selected].link.url}}">{{projects[selected].link.name}}</a>
