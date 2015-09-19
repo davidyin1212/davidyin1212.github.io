@@ -14,9 +14,9 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   {
     name: 'NexJ',
     url: '#nexj/1',
-    front_cover: 'http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg',
+    front_cover: 'http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg',
     technologies: ['Java', 'Spring', 'Microsoft SQL Server', 'HTML/CSS'],
-    imgs: ['http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg','http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
+    imgs: ['http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
     description: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, jQuery, Javascript, HTML/CSS',
     date: '2015'
   },
