@@ -4,128 +4,24 @@
   width: 100%;
 }
 
-// Animations
-@-webkit-keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
-}
-
-@-moz-keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
-}
-
-@keyframes scroll-ani {
-  0% {
-    opacity: 1;
-    top: 29%;
-  }
-  15% {
-    opacity: 1;
-    top: 50%;
-  }
-  50% {
-    opacity: 0;
-    top: 50%;
-  }
-  100% {
-    opacity: 0;
-    top: 29%;
-  }
-}
-
-.mouse-scroll {
+.arrow {
   position: fixed;
-  line-height: 18px;
-  font-size: 13px;
-  font-weight: normal;
-  color: black;
-  color: black;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2px;
-  margin-bottom: 10%;
-  text-decoration: none;
-  overflow: hidden;
-}
-// The Mouse
-span .mouse {
-  position: relative;
-  display: block;
-  width: 46px;
-  height: 73px;
-  margin: 0 auto 20px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 3px solid black;
-  border-radius: 23px; 
-}
-// Scroll Indicator
-span .mouse-movement { 
-  position: absolute;
-  display: block;
-  top: 29%;
+  bottom: 5vh;
   left: 50%;
-  width: 8px;
-  height: 8px;
-  margin: -4px 0 0 -4px;
-  background: black;
-  border-radius: 50%;
-  -webkit-animation: scroll-ani 4s linear infinite;
-  -moz-animation: scroll-ani 4s linear infinite;
-  animation: scroll-ani 4s linear infinite;
-}
-    
-// The Scroll Message
-span .mouse-message { 
-    float: left;
-    margin: -200px 0 0 7px;
-    padding: 0;
-    -webkit-animation: scroll-ani 4s linear infinite;
-  -moz-animation: scroll-ani 4s linear infinite;
-  animation: scroll-ani 4s linear infinite;
-}
-  
-// shown on Hover of The Mouse
-.mouse-scroll &:hover {
-  .mouse-message {
-    margin-top: 0;    
-  } 
+  margin-left:-20px;
+  height: 60px;
+  width: 60px;
+  background-image: url("assets/scroll-down.png");
+  background-size: contain;
+  -webkit-animation-duration: 1.2s;
+  -webkit-animation-delay: 0.3s;
 }
 </style>
 <div class="jumbotron" ng-controller="ExpirenceController">
   <div class="detail-masthead">
     <img ng-repeat="img in projects[selected].imgs" ng-src="{{img}}">
   </div>
-
+  <a class="arrow animated infinite bounce" href="#" scroll-to="description"></a>
   <div id="description" class="jumbotron col-md-10 col-md-offset-1">
     <h2>
       <a ng-if="projects[selected].link != undefined" ng-href="{{projects[selected].link.url}}">{{projects[selected].link.name}}</a>
