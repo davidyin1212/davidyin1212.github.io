@@ -1,28 +1,37 @@
 angular.module('portfolioApp').controller('ExpirenceController', function($scope, $routeParams) {
   $scope.pageClass = "page-expirence";
   $scope.projects = [{
+    name: 'StackAdapt',
+    url: '#stackadapt/0',
+    front_cover: 'http://static1.squarespace.com/static/517e1a0be4b01510f836315d/t/5591ca99e4b0cfb74f37524d/1435617947405/stackadapt_landing.jpg?format=1500w',
+    technologies: ['Ruby', 'Rails', 'Javascript', 'PostgreSQL', 'AngularJS', 'Bootstrap', 'HTML/CSS'],
+    imgs: ['https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAUQjhxqFQoTCPbW48Syh8kCFUikHgodTZYP_Q&url=http%3A%2F%2Fblog.stackadapt.com%2Fauthor%2Fstackadaptteam%2Fpage%2F1&psig=AFQjCNEGElSyDSzfcw_S-v9E3GqqHsW_KQ&ust=1447297634120392','http://static1.squarespace.com/static/517e1a0be4b01510f836315d/t/5591ca99e4b0cfb74f37524d/1435617947405/stackadapt_landing.jpg?format=1500w'],
+    description: "Currently Working at StackAdapt as a Fullstack Developer. Working on StackAdapt’s Native Advertising platform. Working primarily in Go, MySQL, Aerospike, Redis, and Kafka for the backend platform side and Rails, Javascript, React, Bootstrap, and HTML/CSS for the application layer. ",
+    date: '2015'
+  },
+  {
     name: 'H&H',
-    url: '#hh/0',
+    url: '#hh/1',
     front_cover: '/assets/H&HCover.PNG',
     technologies: ['Ruby', 'Rails', 'Javascript', 'PostgreSQL', 'AngularJS', 'Bootstrap', 'HTML/CSS'],
     imgs: ['/assets/H&HDashboard.PNG', '/assets/H&HLanding.PNG', '/assets/H&HSearch.PNG'],
-    description: "Web application create for H&H International that allows for their clients to look and order from current inventory of cars and also to track their own inventory. Allows clients to put down a deposit using their credit car directly (I used Stripe) and create a customer profile for later use. App has dynamic and responsive searching. Employees can look at what cars are orded by which clients and update their stauses as well as add new cars to the inventory. App manages permission groups using both permissions as well as user groups and allows access to different areas of the app based upon user permissions. \nStack is Ruby on Rails for the backend server using Stripe for payments, Devise for authentication, and Pundit for permissions and authorization. These create the required JSON endpoints and are consumed by the front-end built using AngularJS. Also used Bootstrap as well as followed Google's material design principles. \nDesign Choices: \nHigh responsiveness required the use of AngularJS and it's assets were integrated into the rails asset pipeline. This increased site responsiveness. \nDecided to use permissons and user groups exposed through the API to drive template rendering that way we can have good permission driven rendering and allow certain capabilities to people with the proper permission. This is also enforced in the back-end as well with the use of Pundit so that unathorized access to specific JSON endpoints (depending on user) would not be allowed. \nResponsive search bar that would update search quries immediatly on text input rather than clicking search. Done by filtering results based upon input on each user input change. \nUsers can only be created by Admin's to the system. This was a contraint that the client wanted since user create is exposed by Rails via there MVC architecture it was pretty easy to do this.",
+    description: "Web application created for H&H International that allows for their clients to look and order from current inventory of cars and also to track their own inventory. Allows clients to put down a deposit using their credit car directly (I used Stripe) and create a customer profile for later use. App has dynamic and responsive searching. Employees can look at what cars are orded by which clients and update their stauses as well as add new cars to the inventory. App manages permission groups using both permissions as well as user groups and allows access to different areas of the app based upon user permissions. \nStack is Ruby on Rails for the backend server using Stripe for payments, Devise for authentication, and Pundit for permissions and authorization. These create the required JSON endpoints and are consumed by the front-end built using AngularJS. Also used Bootstrap as well as followed Google's material design principles. \nDesign Choices: \nHigh responsiveness required the use of AngularJS and it's assets were integrated into the rails asset pipeline. This increased site responsiveness. \nDecided to use permissons and user groups exposed through the API to drive template rendering that way we can have good permission driven rendering and allow certain capabilities to people with the proper permission. This is also enforced in the back-end as well with the use of Pundit so that unathorized access to specific JSON endpoints (depending on user) would not be allowed. \nResponsive search bar that would update search quries immediatly on text input rather than clicking search. Done by filtering results based upon input on each user input change. \nUsers can only be created by Admin's to the system. This was a contraint that the client wanted since user create is exposed by Rails via there MVC architecture it was pretty easy to do this.",
     link: {name: "Live Site: Still in alpha and requires more end to end testing as well as load testing", url: "https://powerful-citadel-2565.herokuapp.com"},
     github: "https://github.com/davidyin1212/H-H",
     date: '2015'
   },
   {
     name: 'NexJ',
-    url: '#nexj/1',
+    url: '#nexj/2',
     front_cover: 'http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg',
     technologies: ['Java', 'Spring', 'Microsoft SQL Server', 'HTML/CSS'],
     imgs: ['http://health.blog.yorku.ca/files/2012/12/cwp-participant-1.jpg','http://www.nexj.com/wp-content/uploads/2012/11/nexj-systems-logo-web.jpg'],
-    description: 'Currently working at NexJ working to develop top of the line CRM software to financial customers. Work as a Fullstack Developer using Java, Microsoft SQL Server, jQuery, Javascript, HTML/CSS',
+    description: 'Application Developer at NexJ worked on their CRM platform using Java, Spring, HTML/CSS, Javascript, and Microsoft SQL Server stack.',
     date: '2015'
   },
   {
     name: 'LineUp',
-    url: '#lineup/2',
+    url: '#lineup/3',
     front_cover: '/assets/Lineup.PNG',
     technologies: ['Ruby', 'Rails', 'Javascript', 'PostgreSQL', 'Bootstrap', 'HTML/CSS'],
     imgs: ['/assets/Lineup.PNG'],
@@ -33,7 +42,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   },
   {
     name: 'Amazon',
-    url: '#amazon/3',
+    url: '#amazon/4',
     front_cover: 'http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png',
     technologies: ['Java', 'Spring', 'Javascript', 'Perl', 'Bootstrap', 'HTML/CSS'],
     imgs: ['http://www.channeladvisor.com/caapi/wp-content/uploads/2015/07/Amazon.png','http://media.corporate-ir.net/media_files/IROL/97/97664/images/amazon_logo_RGB.jpg'],
@@ -42,7 +51,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
   },
   {
     name: 'Interaxon',
-    url: '#interaxon/4',
+    url: '#interaxon/5',
     front_cover: 'http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png',
     technologies: ['iOS', 'Android', 'Unity', 'C#'],
     imgs: ['http://betakit.com/wp-content/uploads/2014/06/Screen-Shot-2014-06-04-at-12.13.08-PM-1050x564.png','http://venturebeat.com/wp-content/uploads/2014/09/muse-app-results.png'],
