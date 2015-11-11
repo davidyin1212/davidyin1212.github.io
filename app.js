@@ -26,6 +26,10 @@ angular.module('portfolioApp').config(function($routeProvider, $mdThemingProvide
             templateUrl : 'views/about.html',
             controller  : 'AboutController'
         })
+        .when('/stackadapt/:id', {
+            templateUrl : 'views/expirenceDetail.html',
+            controller  : 'ExpirenceController'
+        })
         .when('/hh/:id', {
             templateUrl : 'views/expirenceDetail.html',
             controller  : 'ExpirenceController'
