@@ -5,7 +5,7 @@ angular.module('portfolioApp').controller('ExpirenceController', function($scope
     url: '#stackadapt/0',
     front_cover: 'http://static1.squarespace.com/static/517e1a0be4b01510f836315d/t/5591ca99e4b0cfb74f37524d/1435617947405/stackadapt_landing.jpg?format=1500w',
     technologies: ['Ruby', 'Rails', 'Javascript', 'PostgreSQL', 'AngularJS', 'Bootstrap', 'HTML/CSS'],
-    imgs: ['https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0CAUQjhxqFQoTCPbW48Syh8kCFUikHgodTZYP_Q&url=http%3A%2F%2Fblog.stackadapt.com%2Fauthor%2Fstackadaptteam%2Fpage%2F1&psig=AFQjCNEGElSyDSzfcw_S-v9E3GqqHsW_KQ&ust=1447297634120392','http://static1.squarespace.com/static/517e1a0be4b01510f836315d/t/5591ca99e4b0cfb74f37524d/1435617947405/stackadapt_landing.jpg?format=1500w'],
+    imgs: ['http://static1.squarespace.com/static/517e1a0be4b01510f836315d/t/5591ca99e4b0cfb74f37524d/1435617947405/stackadapt_landing.jpg?format=1500w'],
     description: "Currently Working at StackAdapt as a Fullstack Developer. Working on StackAdapt’s Native Advertising platform. Working primarily in Go, MySQL, Aerospike, Redis, and Kafka for the backend platform side and Rails, Javascript, React, Bootstrap, and HTML/CSS for the application layer. ",
     date: '2015'
   },
